@@ -1,0 +1,26 @@
+{
+  "name": "elevator-list",
+  "author": "rax",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "rax-scripts start",
+    "build": "rax-scripts build",
+    "lint": "eslint --ext .js --ext .jsx ./src"
+  },
+  "dependencies": {
+    "rax": "^0.4.12",
+    "rax-components": "^0.4.12",
+    "rax-gotop": "^0.4.12",
+    "rax-image": "^0.4.12",
+    "rax-picture": "^0.4.12",
+    "rax-slider": "^0.4.12",
+    "rax-tabheader": "^0.4.12",
+    "rax-text": "^0.4.12",
+    "rax-view": "^0.4.12"
+  },
+  "devDependencies": {
+    "rax-scripts": "^0.4.12",
+    "babel-eslint": "^7.1.0",
+    "eslint": "^3.10.0"
+  }
+}

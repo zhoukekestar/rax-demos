@@ -1,0 +1,89 @@
+import { createElement, Component } from 'rax';
+import View from 'rax-view';
+import Text from 'rax-text';
+import Image from 'rax-image';
+import Slider from 'rax-slider';
+
+const styles = {
+  container: {
+    width: 750
+  },
+  slider: {
+    width: '750rem',
+    position: 'relative',
+    overflow: 'hidden',
+    height: '350rem',
+    backgroundColor: '#cccccc'
+  },
+  itemWrap: {
+    width: '750rem',
+    height: '252rem'
+  },
+  image: {
+    width: '750rem',
+    height: '252rem'
+  },
+  button: {
+    marginTop: '20rem',
+    width: '340rem',
+    height: '80rem'
+  },
+  paginationStyle: {
+    position: 'absolute',
+    width: '750rem',
+    height: '40rem',
+    bottom: '20rem',
+    left: 0,
+    itemColor: 'rgba(255, 255, 255, 0.5)',
+    itemSelectedColor: 'rgb(255, 80, 0)',
+    itemSize: '8rem'
+  },
+  text: {
+    fontSize: 50
+  }
+};
+
+class TopSlider extends Component {
+  state = {
+  };
+
+  constructor(props, ctx) {
+    super(props, ctx);
+  }
+
+  slideTo(index) {
+    this.refs.Slider.slideTo(index);
+  }
+
+  onchange() {
+    console.log('onchange');
+  }
+
+  render() {
+    return (
+      <View style={styles.container}>
+        <Slider className="slider" width="750rem" height="352rem" style={styles.slider}
+          autoPlay={true}
+          loop={true}
+          showsPagination={true}
+          paginationStyle={styles.paginationStyle}
+          autoplayTimeout={3000}
+          onChange={this.onchange.bind(this)}>
+          <View style={styles.itemWrap}>
+            <Image style={styles.image} source={{uri: '//img.alicdn.com/tps/TB1m2LyJFXXXXbHXpXXXXXXXXXX-1125-352.jpg_q50.jpg'}} />
+          </View>
+          <View style={styles.itemWrap}>
+            <Image style={styles.image} source={{uri: '//img.alicdn.com/tps/TB1ogUvJFXXXXaAXXXXXXXXXXXX-1125-352.jpg_q50.jpg'}} />
+          </View>
+          <View style={styles.itemWrap}>
+            <Image style={styles.image} source={{uri: '//gw.alicdn.com/tps/i4/TB1pgxYJXXXXXcAXpXXrVZt0FXX-640-200.jpg_q50.jpg'}} />
+          </View>
+          <View style={styles.itemWrap}>
+            <Image style={styles.image} source={{uri: '//gw.alicdn.com/imgextra/i4/3/TB2STElaohnpuFjSZFPXXb_4XXa_!!3-0-yamato.jpg_q50.jpg'}} />
+          </View>
+        </Slider>
+      </View>
+    );
+  }
+}
+export default TopSlider;
