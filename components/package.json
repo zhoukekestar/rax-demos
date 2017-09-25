@@ -1,0 +1,26 @@
+{
+  "name": "components",
+  "author": "rax",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "rax-scripts start",
+    "build": "rax-scripts build",
+    "lint": "eslint --ext .js --ext .jsx ./src"
+  },
+  "dependencies": {
+    "rax": "^0.4.12",
+    "rax-button": "^0.4.14",
+    "rax-icon": "^0.4.14",
+    "rax-image": "^0.4.14",
+    "rax-link": "^0.4.14",
+    "rax-text": "^0.4.12",
+    "rax-touchable": "^0.4.14",
+    "rax-video": "^0.4.14",
+    "rax-view": "^0.4.12"
+  },
+  "devDependencies": {
+    "rax-scripts": "^0.4.12",
+    "babel-eslint": "^7.1.0",
+    "eslint": "^3.10.0"
+  }
+}
