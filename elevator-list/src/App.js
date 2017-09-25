@@ -2,7 +2,9 @@ import {createElement, Component} from 'rax';
 import View from 'rax-view';
 import Text from 'rax-text';
 import styles from './App.css';
+import ScrollView from 'rax-scrollview';
 import ListView from 'rax-listview';
+
 import Picture from 'rax-picture';
 
 import GoTop from 'rax-gotop';
@@ -13,12 +15,11 @@ import List from './List';
 class App extends Component {
   render() {
     return (
-      <View>
+      <ScrollView>
         <TopSlider />
         <Tabs />
-        
         <List />
-      </View>
+      </ScrollView>
     );
   }
 }

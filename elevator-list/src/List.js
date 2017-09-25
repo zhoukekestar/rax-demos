@@ -6,17 +6,17 @@ import ListView from 'rax-listview';
 
 class List extends Component {
     state = {
-        data: [{key: 'tom'}, {key: 'jeck'}, {key: 'tom'}, {key: 'jeck'}, 
-        {key: 'tom'}, {key: 'jeck'}, {key: 'tom'}, {key: 'jeck'}, 
-        {key: 'tom'}, {key: 'jeck'}, {key: 'tom'}, {key: 'jeck'}, 
-        {key: 'tom'}, {key: 'jeck'}, {key: 'tom'}, {key: 'jeck'}, 
-        {key: 'tom'}, {key: 'jeck'}, {key: 'tom'}, {key: 'jeck'}, 
-        {key: 'tom'}, {key: 'jeck'}, {key: 'tom'}, {key: 'jeck'}, 
-        {key: 'tom'}, {key: 'jeck'}, {key: 'tom'}, {key: 'jeck'}, 
-        {key: 'tom'}, {key: 'jeck'}, {key: 'tom'}, {key: 'jeck'}, 
-        {key: 'tom'}, {key: 'jeck'}, {key: 'tom'}, {key: 'jeck'}, 
-        {key: 'tom'}, {key: 'jeck'}, {key: 'tom'}, {key: 'jeck'}, 
-        {key: 'tom'}, {key: 'jeck'}],
+        data: [{ key: 'tom' }, { key: 'jeck' }, { key: 'tom' }, { key: 'jeck' },
+        { key: 'tom' }, { key: 'jeck' }, { key: 'tom' }, { key: 'jeck' },
+        { key: 'tom' }, { key: 'jeck' }, { key: 'tom' }, { key: 'jeck' },
+        { key: 'tom' }, { key: 'jeck' }, { key: 'tom' }, { key: 'jeck' },
+        { key: 'tom' }, { key: 'jeck' }, { key: 'tom' }, { key: 'jeck' },
+        { key: 'tom' }, { key: 'jeck' }, { key: 'tom' }, { key: 'jeck' },
+        { key: 'tom' }, { key: 'jeck' }, { key: 'tom' }, { key: 'jeck' },
+        { key: 'tom' }, { key: 'jeck' }, { key: 'tom' }, { key: 'jeck' },
+        { key: 'tom' }, { key: 'jeck' }, { key: 'tom' }, { key: 'jeck' },
+        { key: 'tom' }, { key: 'jeck' }, { key: 'tom' }, { key: 'jeck' },
+        { key: 'tom' }, { key: 'jeck' }],
     };
 
     constructor(props, ctx) {
@@ -36,13 +36,13 @@ class List extends Component {
         return (
             <View>
                 <ListView
-                    renderRow={this.listItem} 
+                    renderRow={this.listItem}
                     dataSource={this.state.data}
                     onEndReached={this.handleLoadMore} >
                 </ListView>
-                <GoTop name="顶部" style={{width: 100, height: 100}}
-                    onTop={() => { 
-                        this.scrollview.scrollTo({y: 0});
+                <GoTop name="顶部" style={{ width: 100, height: 100 }}
+                    onTop={() => {
+                        this.scrollview.scrollTo({ y: 0 });
                     }}
                     icon="//gtms03.alicdn.com/tps/i3/TB1rrfVJVXXXXalXXXXGEZzGpXX-40-40.png" />
             </View>
