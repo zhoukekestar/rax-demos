@@ -24,6 +24,12 @@ Rax demos
     * Slider
     * TopHeader
 * list-switching
+* [components](https://alibaba.github.io/rax/component/countdown): 官网下所有的组件样列，包括（除了功能组件和布局组件）：
+    * 基础组件
+    * 表单组件
+    * 提示反馈（除了下拉刷新）
+    * 数据展示
+      
 
 
 ## References

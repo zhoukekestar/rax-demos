@@ -10,13 +10,22 @@
   "dependencies": {
     "rax": "^0.4.12",
     "rax-button": "^0.4.14",
+    "rax-calendar": "^0.4.14",
+    "rax-countdown": "^0.4.14",
     "rax-icon": "^0.4.14",
     "rax-image": "^0.4.14",
     "rax-link": "^0.4.14",
+    "rax-modal": "^0.4.14",
+    "rax-picture": "^0.4.14",
+    "rax-player": "^0.4.14",
+    "rax-slider": "^0.4.14",
+    "rax-switch": "^0.4.14",
     "rax-text": "^0.4.12",
+    "rax-textinput": "^0.4.14",
     "rax-touchable": "^0.4.14",
     "rax-video": "^0.4.14",
-    "rax-view": "^0.4.12"
+    "rax-view": "^0.4.12",
+    "universal-toast": "^0.4.14"
   },
   "devDependencies": {
     "rax-scripts": "^0.4.12",
