@@ -29,8 +29,12 @@ Rax demos
     * 表单组件
     * 提示反馈（除了下拉刷新）
     * 数据展示
-      
 
+## templates
+* [表单类](https://github.com/alibaba/rax/tree/master/packages/template-buy)
+* [聊天类](https://github.com/alibaba/rax/tree/master/packages/template-chat)
+* [淘宝类](https://github.com/alibaba/rax/tree/master/packages/template-taobao)
+* [知乎类](https://github.com/alibaba/rax/tree/master/packages/template-zhihu)
 
 ## References
 * [rax](https://github.com/alibaba/rax)
